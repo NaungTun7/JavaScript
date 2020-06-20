@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess Number</title>
+	<script type="text/javascript">
+		let correctNo=Math.floor((Math.random() * 10)+1);
+		let iscorrect=false;
+		let i=1;
+
+		
+		do{
+			let guessNum = prompt("Guess the Number between 1 to 10");
+			
+
+			if(correctNo == guessNum)
+			{
+				
+				iscorrect=true;
+				alert("Correct!"+"Your guess"+i+"time");
+			}else if(correctNo<guessNum){
+
+				alert('higher');
+
+			}else if(correctNo>guessNum){
+				alert('lower');
+			}i++
+		}while(!iscorrect)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
